@@ -22,7 +22,7 @@ if __name__ == "__main__":
     start = timeit.default_timer() # Start timer
 
     # Replace with your custom model of choice
-    model_id = 'google/flan-t5-large'# go for a smaller model if you dont have the VRAM
+    model_id = 'google/flan-t5-large'
     tokenizer = AutoTokenizer.from_pretrained(model_id)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_id)
 
